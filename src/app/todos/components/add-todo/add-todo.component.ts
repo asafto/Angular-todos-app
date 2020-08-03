@@ -9,7 +9,7 @@ export class AddTodoComponent implements OnInit {
 
   title: string;
 
-  @Output() addTodo: EventEmitter<any> = new EventEmitter<any>();
+  @Output() addTodo: EventEmitter<any> = new EventEmitter<any>(); //using any as jasonplaceholder todo holds also userId
 
   constructor() { }
 
@@ -18,13 +18,15 @@ export class AddTodoComponent implements OnInit {
 
   onSubmit() {
     if (this.title) {
+
       const todo = {
         title: this.title,
         completed: false
       };
+      this.title = '';
       return this.addTodo.emit(todo);
     }
-    alert('You must fill in a todo in order to submit');
+    alert('You must fill in a todo in order to submit a new todo');
   }
 
 }

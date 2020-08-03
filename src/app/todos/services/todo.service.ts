@@ -34,7 +34,7 @@ export class TodosService {
   //Delete todo on server
   deleteTodos(todo: Todo): Observable<Todo> {
     const url: string = `${this.todosUrl}/${todo.id}`;
-    console.log(`todo id ${todo.id} deleted on server successfuly`)
+    // console.log(`todo id ${todo.id} deleted on server successfuly`)
     return this.http.delete<Todo>(url, httpOptions);
   }
 

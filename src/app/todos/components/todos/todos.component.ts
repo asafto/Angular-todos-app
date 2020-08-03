@@ -22,7 +22,6 @@ export class TodosComponent implements OnInit {
 
   deleteTodo(todo: Todo) {
     //Delete on UI
-    // this.todos.splice(todo.id-1, 1);
     this.todos = this.todos.filter(item => item.id !== todo.id);
 
     //Delete by service on server

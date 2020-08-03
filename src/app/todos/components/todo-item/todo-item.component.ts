@@ -34,7 +34,7 @@ export class TodoItemComponent implements OnInit {
 
     //Toggle by Service on server
     this.todosService.toggleCompleted(todo).subscribe(todo => {
-      console.log(todo);
+      // console.log(todo);
     });
   }
 
