@@ -1,4 +1,5 @@
 <form class="form" (ngSubmit)="onSubmit()">
+  <!-- ngSubmit is an @angular/Forms module (imported on todos module) event, for forms submittion -->
   <input type="text" name="title" [(ngModel)]="title" placeholder="Add Todo...">
   <input type="submit" value="Submit" class="btn">
 </form>

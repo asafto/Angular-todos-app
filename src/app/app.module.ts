@@ -4,10 +4,11 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TodosModule } from "./todos/todos.module";
+import { TodoHeaderComponent } from './layouts/todo-header/todo-header.component';
+import { AboutTodoComponent } from './layouts/about-todo/about-todo.component';
 @NgModule({
   declarations: [
-    AppComponent
-  ],
+    AppComponent, TodoHeaderComponent, AboutTodoComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

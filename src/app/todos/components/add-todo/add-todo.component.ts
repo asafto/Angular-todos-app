@@ -17,11 +17,14 @@ export class AddTodoComponent implements OnInit {
   }
 
   onSubmit() {
-    const todo = {
-      title: this.title,
-      completed: false
-    };
-    this.addTodo.emit(todo);
+    if (this.title) {
+      const todo = {
+        title: this.title,
+        completed: false
+      };
+      return this.addTodo.emit(todo);
+    }
+    alert('You must fill in a todo in order to submit');
   }
 
 }

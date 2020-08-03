@@ -5,13 +5,12 @@ import { FormsModule } from '@angular/forms'
 import { TodoItemComponent } from './components/todo-item/todo-item.component';
 import { AddTodoComponent } from './components/add-todo/add-todo.component';
 import { TodosComponent } from './components/todos/todos.component';
-import { TodoHeaderComponent } from './components/layouts/todo-header/todo-header.component';
-import { AboutTodoComponent } from './components/layouts/about-todo/about-todo.component';
+
 
 
 
 @NgModule({
-  declarations: [TodoItemComponent, AddTodoComponent, TodosComponent, TodoHeaderComponent, AboutTodoComponent],
+  declarations: [TodoItemComponent, AddTodoComponent, TodosComponent],
   imports: [
     CommonModule,
     HttpClientModule,
